@@ -7,7 +7,7 @@ $string= "Li vuoi quei kiwi? E se non vuoi quei kiwi che kiwi vuoi?";
 
 echo $string;
 
-echo "<br>";
+$badword = $_GET["badword"];
 
 echo "<br>";
 
@@ -15,9 +15,9 @@ echo strlen ($string) ;
 
 echo "<br>";
 
-echo "<br>";
+$newString = str_replace($badword, "***", $string);
 
-echo $newName = str_replace("kiwi", "***", $string);
+echo $newString;
 
 $explodedText = explode(",", $string);
 
